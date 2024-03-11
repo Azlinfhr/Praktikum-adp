@@ -1,0 +1,24 @@
+program Luas_permukaan_balok;
+var
+p,l,t,luas_permukaan_balok,luas:real;
+begin
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+writeln('Program menghitung luas permukaan balok');
+writeln('__________________________');
+write('Panjang= ');
+readln(P);
+write('Lebar= ');
+readln(L);
+write('Tinggi= ');
+readln(T);
+writeln('                           ');
+writeln('Rumus Luas Permukaan Balok= 2(PL+PT+LT)');
+Luas:=2*(P*L+P*T+L*T);  
+write('Luas Permukaan Balok= ');
+writeln(luas);
+write('Jadi, luas permukaan balok adalah ');
+writeln(luas);
+writeln('See you on the next program');
+writeln('__________________________');
+end.
