@@ -1,0 +1,20 @@
+program menghitung_volume_bola;
+var
+r,volume:real;
+begin
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+writeln('Program Menghitung volume bola');
+writeln('______________________________');
+write('Jari-jari=');
+readln(r);
+writeln('                               ');
+writeln('Rumus Volume Bola= 4/3 x 3.14 x r³');
+Volume:=4/3*3.14*r*r*r;
+write('Volume=');
+writeln(volume);
+writeln('Jadi, volume bola adalah ');
+writeln(volume);
+writeln('See you on the next program');
+writeln('______________________________');
+end.
