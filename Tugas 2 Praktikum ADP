@@ -1,0 +1,196 @@
+program Menu_4;
+uses crt;
+var 
+pesanan,makanan,minuman,makanan_dan_minuman,total_harga,jumlah,harga,paket:integer;
+begin
+  clrscr;
+  writeln('Nama: Azlin Fahira');
+  writeln('NIM: 2310432022');
+  WriteLn('Program Pengkondisian');
+  writeln('_________________________________');
+  writeln('Selamat Datang di Restoran Pascal');
+  writeln('Silahkan pilih pesanan anda');
+  writeln('|======================|');
+  WriteLn('|     Pilihan Menu     |');
+  writeln('|======================|');
+  writeln('|1. Makanan            |');
+  writeln('|2. Minuman            |');
+  writeln('|3. Makanan dan Minuman|');
+  writeln('|======================|');
+  write('Input pesanan= ');
+    readln(pesanan);
+    
+    if (pesanan=1) then begin writeln('Makanan');
+    
+    writeln('Berikut Daftar Menu Makanan');
+    writeln('|====================|');
+    WriteLn('|   Pilihan Makanan  |');
+    writeln('|====================|');
+    writeln('|1. Chicken Katsu    |');
+    writeln('|2. Tom yam          |');
+    writeln('|3. Spaghetti        |');
+    writeln('|4. Mie becek        |');
+    writeln('|5. Bakso            |');
+    writeln('|====================|');
+    write('input makanan= ');
+    readln(makanan);
+    
+    if (makanan=1) then begin writeln('Chicken Katsu');
+    write('jumlah= ');
+    readln(jumlah);
+    harga:=10000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (makanan=2) then begin writeln('Tom yum'); 
+    write('Jumlah= ');
+    readln(Jumlah);
+    harga:=25000;
+    total_harga:=harga*Jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (makanan=3) then begin writeln('Spaghetti');
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=15000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (makanan=4) then begin writeln('Mie Becek');
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=10000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (makanan=5) then begin writeln('Bakso');
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=11000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    writeln('                  ');
+    writeln('Terima Kasih Telah Berkunjung');
+    writeln('☆•°Silahkan Datang Kembali°•☆');
+    end;
+
+    if (pesanan=2) then begin writeln('Minuman');
+    writeln('Berikut Daftar Menu Minuman');
+    writeln('|====================|');
+    WriteLn('|   Pilihan Minuman  |');
+    writeln('|====================|');
+    writeln('|1. Teh Es           |');
+    writeln('|2. Matcha Latte     |');
+    writeln('|3. Capcin           |');
+    writeln('|4. Sop Buah         |');
+    writeln('|====================|');
+    write('input minuman= ');
+    readln(minuman);
+    
+    if (minuman=1) then begin writeln('Teh Es'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=10000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (minuman=2) then begin writeln('Matcha Latte'); 
+    write('Jumlah= ');
+    readln(Jumlah);
+    harga:=20000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (minuman=3) then begin writeln('Capcin');
+    write('Jumlah= ');
+    readln(Jumlah);
+    harga:=6000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (minuman=4) then begin writeln('Sop Buah');
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=10000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    writeln('                  ');
+    writeln('Terima Kasih Telah Berkunjung');
+    writeln('☆•°Silahkan Datang Kembali°•☆');
+    end;
+    
+    if (pesanan=3) then begin writeln('Makanan dan minuman');
+    writeln('Berikut Daftar Menu Special Ramadhan');
+    writeln('|==========================|');
+    WriteLn('|   Pilihan Paket Ramadhan |');
+    writeln('|==========================|');
+    writeln('|1. Chicken Katsu + Capcin |');
+    writeln('|2. Tom yam + Jus Lemon    |');
+    writeln('|3. Spaghetti + Lychee Tea |');
+    writeln('|4. Mie Becek + Jus Jeruk  |');
+    writeln('|5. Ayam Geprek + Teh Es   |');
+    writeln('|==========================|');
+    write('input paket= ');
+    readln(paket);
+    
+    if (paket=1) then begin writeln('Chicken Katsu + Capcin'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=20000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (paket=2) then begin writeln('Tom Yum + Jus Lemon'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=30000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (paket=3) then begin writeln('Spaghetti + Lychee Tea'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=25000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (paket=4) then begin writeln('Mie Becek + Jus Jeruk'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=15000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    if (paket=5) then begin writeln('Ayam Geprek + Teh Es'); 
+    write('Jumlah= ');
+    readln(jumlah);
+    harga:=15000;
+    total_harga:=harga*jumlah;
+    write('Total Harga= ',total_harga);
+    end;
+    
+    writeln('                  ');
+    writeln('Terima Kasih Telah Berkunjung');
+    writeln('☆•°Silahkan Datang Kembali°•☆');
+    end;
+    
+    if (pesanan>3) then begin writeln('Kode Pesanan Tidak Valid');
+    end;
+    
+  readln;
+end.  
