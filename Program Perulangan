@@ -1,0 +1,62 @@
+program Tabel_perulangan;
+uses crt;
+var menu,i,j,n:integer;
+begin
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+writeln('Program Pengkondisian');
+repeat
+ writeln('_______________________________________');
+ writeln('Selamat Datang Di Program Pengkondisian');
+ writeln('|===============================|');
+ writeln('|         Pilihan Menu          |');
+ writeln('|===============================|');
+ writeln('|1. Tabel Perkalian n×n         |');
+ writeln('|2. Tabel Penjumlahan n×n       |');
+ writeln('|3. Keluar                      |');
+ writeln('|===============================|');
+ write('Input Menu= ');
+ readln(menu);
+  if (menu>3) then begin writeln('Terjadi Kesalahan');
+  end;
+  if (menu=1) then begin writeln('Tabel Perkalian n×n');
+  write('Masukkan nilai n (1-10)= '); readln(n);
+  writeln('____________________________');
+  writeln(' ');
+  write('     ');
+  for i:=1 to n do
+    write(i:4,'|');
+  writeln;
+writeln('____________________________');
+
+  for i:=1 to n do
+  begin
+    write(i:3,'|');
+    for j:=1 to n do
+      write((i * j):4,'|');
+    writeln;
+   end;
+   end;
+
+  
+  if (menu=2) then begin writeln('Tabel Penjumlahan n×n');
+  write('Masukkan nilai n (1-10)= '); readln(n);
+  writeln('_________________________');
+  writeln(' ');
+  write('     ');
+  for i:=1 to n do
+    write(i:4,'|');
+  writeln;
+writeln('___________________________________');
+
+  for i:=1 to n do
+  begin
+    write(i:3,'|');
+    for j:=1 to n do
+      write((i + j):4,'|');
+    writeln;
+     end;
+  end;
+  readln;
+ until menu=3
+end.
