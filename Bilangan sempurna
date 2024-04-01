@@ -1,0 +1,34 @@
+program Bilangan_Sempurna1;
+uses crt;
+var
+  n, jumlah_faktor, i: integer;
+
+begin
+clrscr();
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+Writeln('Program Perulangan dan Pengkondisian Bersarang');
+writeln('______________________________________________');
+  write('Masukkan bilangan bulat positif= ');
+  readln(n);
+  
+  jumlah_faktor := 0;
+  
+  if n<=0 then writeln(n, ' bukan bilangan bulat positif');
+
+  for i := 1 to n - 1 do
+  begin
+    if n mod i = 0 then
+      jumlah_faktor := jumlah_faktor + i;
+  end;
+
+  if jumlah_faktor = n then
+    writeln(n, ' adalah bilangan sempurna.')
+  else
+    writeln(n, ' bukan bilangan sempurna.');
+
+  if n mod 2 = 0 then
+    writeln(n, ' adalah bilangan genap.')
+  else
+    writeln(n, ' adalah bilangan ganjil.');
+end.
