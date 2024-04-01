@@ -1,0 +1,28 @@
+program Pola_Segitiga;
+uses crt;
+var
+n,i,j:integer;
+begin
+clrscr;
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+writeln('Program Perulangan dan Pengkondisian Bersarang');
+writeln('___________________________');
+  write('Masukkan tinggi segitiga: ');
+  readln(n);
+
+  if (n <= 0) then
+  begin
+    writeln('Tinggi harus merupakan bilangan bulat positif.');
+    exit;
+  end;
+
+  for i := 1 to n do
+  begin
+    for j := 1 to i do
+    begin
+      write(j, ' ');
+    end;
+    writeln;
+  end;
+end.
