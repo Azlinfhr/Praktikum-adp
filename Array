@@ -1,0 +1,55 @@
+program CaesarCipher;
+
+uses crt;
+var
+  text: string;
+  teks_enkripsi: array of char;
+  k, i: integer;
+  c: char;
+
+function EncryptChar(ch: char; k: integer): char;
+begin
+  if (ch >= 'a') and (ch <= 'z') then
+  begin
+    EncryptChar := Chr(Ord('a') + (Ord(ch) - Ord('a') + k) mod 26);
+  end
+  else if (ch >= 'A') and (ch <= 'Z') then
+  begin
+    EncryptChar := Chr(Ord('A') + (Ord(ch) - Ord('A') + k) mod 26);
+  end
+  else
+    EncryptChar := ch; 
+end;
+
+begin
+clrscr;
+writeln('Nama: Azlin Fahira');
+writeln('NIM: 2310432022');
+writeln('Program Array');
+writeln('____________________');
+
+  Write('Masukkan teks: ');
+  ReadLn(text);
+  Write('Masukkan nilai k (1-26): ');
+  ReadLn(k);
+
+if (k < 1) or (k > 26) then
+  begin
+    writeln('Nilai K harus dalam rentang 1-26.');
+    readln;
+    exit;
+  end;
+  SetLength(teks_enkripsi, Length(text));
+  
+  for i := 1 to Length(text) do
+  begin
+    c := text[i];
+    teks_enkripsi[i-1] := EncryptChar(c, k);
+  end;
+
+  Write('Teks yang sudah dienkripsi: ');
+  for i := 0 to High(teks_enkripsi) do
+    Write(Teks_enkripsi[i]);
+  writeln;
+  readln;
+end.
