@@ -1,0 +1,26 @@
+jadwal_penerbangan = [
+    ["Kuala Lumpur", "Pekanbaru", "08:00", "10:00"],
+    ["Kuala Lumpur", "Padang", "08:00", "10:20"],
+    ["Aceh", "Seoul", "10:00", "00:30"]
+]
+
+
+print("Jadwal Penerbangan: ")
+print("===============================================================================")
+print("|{:15} |{:15} |{:20} |{:20} |".format("Kota Asal", "Kota Tujuan", "Waktu Keberangkatan", "Waktu Kedatangan"))
+print("===============================================================================")
+for penerbangan in jadwal_penerbangan:
+    print("|{:15} |{:15} |{:20} |{:20} |".format(*penerbangan))
+    print("-------------------------------------------------------------------------------")
+    
+rute_1 = "Kuala lumpur ke Pekanbaru"
+rute_2 = "Kuala lumpur ke Padang"
+
+rute1 = int(input("Rute1= "))
+rute2 = int(input("Rute2= "))
+if rute1 == 1 and rute2 == 2 : 
+	print("rute tercepat antara", rute_1,"dengan",rute_2, "adalah", rute_1)
+if rute1 == 2 and rute2 == 1 : 
+	print("rute tercepat antara", rute_2, "dengan", rute_1, "adalah", rute_1)
+else: 
+	print("Rute tidak Valid")
