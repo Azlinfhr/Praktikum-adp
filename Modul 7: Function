@@ -1,0 +1,66 @@
+agenda = []
+print("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+print("Agenda Harian Azlin Fahira")
+print("Sabtu, 11 Mei 2024")
+print("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+def tambah_kegiatan():
+    waktu_mulai = input("Masukkan waktu memulai kegiatan (XX:YY): ")
+    waktu_selesai = input("Masukkan waktu selesai kegiatan (XX:YY): ")
+    if waktu_mulai>waktu_selesai:
+    	print('Waktu tidak valid. Silakan input ulang menu!')
+    	
+    	return agenda
+    deskripsi = input("Masukkan deskripsi kegiatan: ")
+    agenda.append([waktu_mulai, waktu_selesai, deskripsi])
+    print("Kegiatan anda berhasil ditambahkan!")
+
+def hapus_kegiatan(agenda):
+    if not agenda:
+        print("Tidak ada agenda.")
+    else:
+        print("Jadwal Harian:")
+        print("No. | Waktu Mulai | Waktu Selesai | Deskripsi")
+        for i in range(len(agenda)):
+            kegiatan = agenda[i]
+            print(f"{i+1}   | {kegiatan[0]}       | {kegiatan[1]}        | {kegiatan[2]}")
+        
+        i_hapus = int(input("Masukkan nomor kegiatan yang ingin dihapus: ")) - 1
+        if i_hapus < len(agenda):
+            agenda_baru = agenda[:i_hapus] + agenda[i_hapus+1:]
+            print("Kegiatan anda berhasil dihapus!")
+            agenda[:]= agenda_baru
+            return agenda_baru
+        else:
+            print("Nomor kegiatan tidak valid.")
+
+    return agenda
+        
+def tampilkan_jadwal():
+    if len(agenda) == 0:
+        print("Jadwal harian anda kosong.")
+    else:
+        print("Jadwal Harian: ")
+        print("No. | Waktu Mulai | Waktu Selesai | Deskripsi")
+        for i in range(len(agenda)):
+            kegiatan = agenda[i]
+            print(f"{i+1}   | {kegiatan[0]}       | {kegiatan[1]}         |  {kegiatan[2]}")
+
+while True:
+    print("\nMenu:")
+    print("1. Tambah Kegiatan")
+    print("2. Hapus Kegiatan")
+    print("3. Tampilkan Jadwal")
+    print("4. Keluar")
+
+    pilihan = input("Masukkan pilihan:  ")
+
+    if pilihan == "1":
+        tambah_kegiatan()
+    elif pilihan == "2":
+        hapus_kegiatan(agenda)
+    elif pilihan == "3":
+        tampilkan_jadwal()
+    elif pilihan == "4":
+        break
+    else:
+        print("Pilihan tidak valid. Silakan input ulang menu yang anda inginkan!")
