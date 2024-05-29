@@ -1,0 +1,61 @@
+from termcolor import colored, cprint
+
+for i in range(9):
+	for j in range(25-i*3-1):
+		cprint(" ", "black", "on_black", end="")
+	for k in range (i*6+4):
+		cprint(" ", "red", "on_red", end="")
+	print()
+    
+for i in range(2):
+	cprint(" "*50, "grey", "on_light_grey", end="")
+	cprint(" "*5, "blue", "on_light_blue", end="")
+	print()
+	
+for i in range(2):
+	cprint(" "*3, "grey", "on_light_grey", end="")
+	cprint(" "*5, "blue", "on_light_blue", end= "")
+	cprint(" "*14, "grey", "on_light_grey", end= "")
+	cprint(" "*5, "blue", "on_light_blue", end= "")
+	cprint(" "*3, "grey", "on_light_grey", end= "")
+	cprint(" "*18, "blue", "on_light_blue", end="")
+	cprint(" "*2, "grey", "on_light_grey", end="")
+	cprint(" "*2, "black", "on_black", end= "")
+	cprint(" "*2, "grey", "on_dark_grey", end= "")
+	print()
+
+for i in range(1):
+	cprint(" "*30, "grey", "on_light_grey", end="")
+	cprint(" "*18, "black", "on_black", end= "")
+	cprint(" "*2, "grey", "on_light_grey", end= "")
+	cprint(" "*2, "black", "on_black", end= "")
+	cprint(" "*2, "grey", "on_dark_grey", end= "")
+	
+for i in range(1):
+	for j in range(5, 10):
+		print()
+		cprint(" "*10, "grey","on_light_grey", end= "")
+		cprint(" "*10, "blue","on_light_blue", end= "")
+		cprint(" "*10, "grey", "on_light_grey", end= "")
+		cprint(" "*18, "blue", "on_light_blue", end="")
+		cprint(" "*2, "grey", "on_light_grey", end="")
+		cprint(" "*2, "black", "on_black", end= "")
+		cprint(" "*2, "grey", "on_dark_grey", end= "")
+	print()
+for i in range(1):
+	cprint(" "*10, "grey","on_light_grey", end= "")
+	cprint(" "*10, "blue","on_light_blue", end= "")
+	cprint(" "*10, "grey", "on_light_grey", end= "")
+	cprint(" "*18, "blue", "on_light_blue", end="")
+	cprint(" "*2, "grey", "on_light_grey", end="")
+	cprint(" "*2, "black", "on_black", end= "")
+	cprint(" "*2, "grey", "on_dark_grey", end= "")
+	cprint(" "*2, "grey", "on_dark_grey", end= "")
+	
+for i in range(9):
+	for j in range(15-i*3-1):
+		cprint(" ", "black", "on_black", end="")
+	for k in range (i*5):
+		cprint(" ", "grey", "on_dark_grey", end="")
+	print()
+	print(" ")
