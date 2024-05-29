@@ -1,0 +1,7 @@
+from termcolor import colored, cprint
+
+for i in range(5):
+	cprint(" "*30, "red","on_light_red")
+for i in range(5):
+	cprint(" "*30, "white", "on_white")
+print("Bendera Indonesia")
